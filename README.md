@@ -1,5 +1,9 @@
 # Music Player App
 
+## Demo Link
+
+[https://mrkazmi333.github.io/sprinto/](https://mrkazmi333.github.io/sprinto/)
+
 This is a React-based Music Player application that allows users to view and play their liked songs. The app features a responsive design with a song grid, player controls, and state management using React Context.
 
 ## Project Structure
