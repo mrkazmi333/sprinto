@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/sprinto/static/css/main.1bf5af91.css",
+    "main.js": "/sprinto/static/js/main.2aa4f2b6.js",
+    "static/js/453.9ca6745f.chunk.js": "/sprinto/static/js/453.9ca6745f.chunk.js",
+    "static/media/chaffdust.svg": "/sprinto/static/media/chaffdust.ea4648f56e21822370eb8a7e83766759.svg",
+    "static/media/dreamon.svg": "/sprinto/static/media/dreamon.44924f6b2f6c97f53d3bedbff6558485.svg",
+    "static/media/origin.svg": "/sprinto/static/media/origin.09214ce23de66b871605e66d66d719a6.svg",
+    "static/media/shortwave.svg": "/sprinto/static/media/shortwave.5c81f532ee25e22232da9704d5c707ef.svg",
+    "static/media/tiedown.svg": "/sprinto/static/media/tiedown.223b62eb5e915b75c17fd7a0aa3f9065.svg",
+    "static/media/believer.svg": "/sprinto/static/media/believer.e8e15a1931d3a2b90c11449127ab88d4.svg",
+    "index.html": "/sprinto/index.html",
+    "static/media/backArrow.svg": "/sprinto/static/media/backArrow.2ce07903d2e68a88beb3e5cef13a584d.svg",
+    "main.1bf5af91.css.map": "/sprinto/static/css/main.1bf5af91.css.map",
+    "main.2aa4f2b6.js.map": "/sprinto/static/js/main.2aa4f2b6.js.map",
+    "453.9ca6745f.chunk.js.map": "/sprinto/static/js/453.9ca6745f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1bf5af91.css",
+    "static/js/main.2aa4f2b6.js"
+  ]
+}
