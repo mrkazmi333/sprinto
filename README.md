@@ -1,3 +1,81 @@
+# Music Player App
+
+This is a React-based Music Player application that allows users to view and play their liked songs. The app features a responsive design with a song grid, player controls, and state management using React Context.
+
+## Project Structure
+
+The project consists of the following main components:
+
+1. `player-context.js`: Manages the global state of the music player.
+2. `MusicPlayer.js`: The main component that renders the song grid and player controls.
+3. `SongGrid.js`: Displays a grid of liked songs.
+4. `PlayerControls.js`: Renders the player controls and current song information.
+5. `App.css`: Contains the styles for the entire application.
+
+## How It Works
+
+### 1. State Management (player-context.js)
+
+The `player-context.js` file sets up the global state management for the music player using React's Context API and useReducer hook. It provides the following:
+
+- Initial state with a list of liked songs and player status.
+- Actions for playing, pausing, and navigating between songs.
+- A reducer function to handle state updates.
+- A custom hook `usePlayer` for easy access to the player state and actions.
+
+### 2. Main Component (MusicPlayer.js)
+
+The `MusicPlayer.js` component serves as the main container for the application. It:
+
+- Renders the page header with a back button and title.
+- Includes the `SongGrid` and `PlayerControls` components.
+- Adjusts its height based on whether a song is currently selected.
+
+### 3. Song Grid (SongGrid.js)
+
+The `SongGrid.js` component displays a grid of liked songs. It:
+
+- Retrieves the list of liked songs from the global state.
+- Renders each song as a clickable item with album art, title, and artist.
+- Triggers the `playSong` action when a song is clicked.
+
+### 4. Player Controls (PlayerControls.js)
+
+The `PlayerControls.js` component handles the playback controls and displays the current song information. It:
+
+- Shows the current song's album art, title, and artist.
+- Provides buttons for previous song, play/pause, and next song.
+- Includes a progress bar (non-functional in this version).
+
+### 5. Styling (App.css)
+
+The `App.css` file contains all the styles for the application, including:
+
+- Color variables for easy theming.
+- Glow effect for song items.
+- Styles for the player controls and progress bar.
+
+## Approach to the Problem
+
+1. **State Management**: I started by setting up the global state using Context API and useReducer. This allows for easy state management across components and provides a single source of truth for the application.
+
+2. **Component Structure**: I broke down the UI into reusable components (MusicPlayer, SongGrid, PlayerControls) to maintain a clean and modular code structure.
+
+3. **Functionality**: The basic play, pause, and song navigation functions are implemented, allowing users to interact with the player.
+
+4. **Scalability**: The current implementation allows for easy addition of new features, such as actual audio playback, more detailed song information, or additional player functions.
+
+## Future Improvements
+
+- Implement actual audio playback functionality.
+- Add a functional progress bar that shows the current position in the song.
+- Implement a search or filter function for the liked songs.
+- Add more detailed song information, such as album name or release date.
+- Implement a backend API to fetch song data and user preferences.
+
+This Music Player app provides a solid foundation for a feature-rich audio playback application, with room for expansion and improvement in functionality and user experience.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -7,64 +85,3 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
